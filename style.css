@@ -1,0 +1,159 @@
+/* Reset and general styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0; /* Remove default margin */
+}
+
+/* Header and navigation */
+header {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.vertical-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    background-color: #333;
+    padding-top: 80px;   
+}
+
+.vertical-nav ul {
+    list-style: none;
+}
+
+.vertical-nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    display: block;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.vertical-nav li a:hover {
+    background-color: #555;
+}
+
+.vertical-nav li a i {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* Main content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-left: 200px; /* Add space for the fixed navigation */
+}
+
+/* Rest of the styles remain the same */
+
+section {
+    margin-bottom: 2rem;
+}
+
+.hero {
+    background-image: url('Gemini_Generated_Image_1j1mbz1j1mbz1j1m.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    max-width: 600px;
+}
+
+.about-box {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.box {
+    width: 30%;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+
+.about-content,
+.project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.about-image,
+.project-image {
+    flex: 1;
+    margin-right: 2rem;
+}
+
+.about-image img,
+.project-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-text,
+.project-text {
+    flex: 2;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form input,
+form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+.center-c button {
+    padding: 0.5rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
